@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   int currentIndex = 0;
   List<Widget> screens = const [
     RecentPostScreen(),
-    // SearchScreen(),
+    SearchScreen(),
     AuthScreen(),
     ActivityScreen(),
     ProfielScreen(),
