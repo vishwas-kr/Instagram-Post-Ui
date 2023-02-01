@@ -13,3 +13,20 @@ List<String> postImage = [
   "https://images.unsplash.com/photo-1596279070611-34f47768f36d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGltYWdlc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60",
   'https://plus.unsplash.com/premium_photo-1669135328254-adda00e1bb2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y291cGxlfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60',
 ];
+
+List<String> follower = [
+  "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+];
+
+List<String> userPostimages = [
+  "https://images.unsplash.com/photo-1674316941849-69c9f21604e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8UzRNS0xBc0JCNzR8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+  "https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8TmV3JTIwWW9ya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  "https://images.unsplash.com/photo-1594908900066-3f47337549d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YWN0b3J8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+  "https://images.unsplash.com/photo-1524330685423-3e1966445abe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFjdG9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  "https://images.unsplash.com/photo-1542303664-4e34a25408be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFjdG9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  "https://images.unsplash.com/photo-1598386651046-5f5666fdc160?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGFjdG9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  "https://images.unsplash.com/photo-1541532713592-79a0317b6b77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cGFydHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+  "https://plus.unsplash.com/premium_photo-1664278686066-37321dc2da13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGFydHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+];
