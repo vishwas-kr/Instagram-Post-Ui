@@ -4,6 +4,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:instagram_post/utils/image_url.dart';
 
+import '../../../utils/loader.dart';
+
 class PostGrid extends StatelessWidget {
   const PostGrid({super.key});
 
@@ -20,7 +22,13 @@ class PostGrid extends StatelessWidget {
       itemBuilder: ((context, index) {
         return ClipRRect(
           borderRadius: BorderRadius.circular(15),
-          child: Image.network(userPostimages[index]),
+          child: Image.network(
+            userPostimages[index],
+            loadingBuilder: (context, child, loadingProgress) {
+              if (loadingProgress == null) return child;
+              return const Loader();
+            },
+          ),
         );
       }),
     );

@@ -38,7 +38,7 @@ class ProfielScreen extends StatelessWidget {
           ),
           SafeArea(
             child: Container(
-              height: size.height * 0.11,
+              height: 65,
               padding: const EdgeInsets.only(left: 16, right: 16, top: 8.0),
               child: Row(
                 children: [
