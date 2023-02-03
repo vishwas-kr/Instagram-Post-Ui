@@ -1,6 +1,4 @@
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:instagram_post/view/profile/widgets/post_grid.dart';
+import 'package:flutter/material.dart';
 
 class ActivityScreen extends StatelessWidget {
   const ActivityScreen({super.key});
