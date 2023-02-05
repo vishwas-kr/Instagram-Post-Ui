@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_post/utils/app_colors.dart';
 import 'package:instagram_post/utils/image_url.dart';
 import 'package:instagram_post/view/recent/widgets/add_story_button.dart';
+import 'package:instagram_post/view/recent/widgets/view_story.dart';
 
 class BuildStory extends StatelessWidget {
   const BuildStory({
@@ -24,27 +24,39 @@ class BuildStory extends StatelessWidget {
               physics: const NeverScrollableScrollPhysics(),
               itemCount: story.length,
               scrollDirection: Axis.horizontal,
-              itemBuilder: (context, index) => Container(
-                width: 75,
-                padding: const EdgeInsets.only(left: 8.0),
-                child: Column(
-                  children: [
-                    CircleAvatar(
-                      radius: 35,
-                      backgroundColor: const Color(0xff826F6F),
-                      child: CircleAvatar(
-                        radius: 30,
-                        backgroundImage: NetworkImage(
-                          story[index],
+              itemBuilder: (context, index) => GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ViewStory(
+                                image: story[index],
+                                name: "Elodie",
+                              )));
+                },
+                child: Container(
+                  width: 75,
+                  padding: const EdgeInsets.only(left: 8.0),
+                  child: Column(
+                    children: [
+                      CircleAvatar(
+                        radius: 35,
+                        backgroundColor: const Color(0xff826F6F),
+                        child: CircleAvatar(
+                          radius: 30,
+                          backgroundColor: const Color(0xff826F6F),
+                          backgroundImage: NetworkImage(
+                            story[index],
+                          ),
                         ),
                       ),
-                    ),
-                    const Text(
-                      'Elodie',
-                      textAlign: TextAlign.center,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                  ],
+                      const Text(
+                        'Elodie',
+                        textAlign: TextAlign.center,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),

@@ -4,6 +4,7 @@ import 'package:instagram_post/view/recent/widgets/build_story.dart';
 import '../../utils/app_colors.dart';
 import '../../utils/data.dart';
 import '../../utils/image_url.dart';
+import '../../utils/loader.dart';
 import '../../widgets/post_action.dart';
 import '../../widgets/user_post_header.dart';
 
@@ -61,6 +62,7 @@ class RecentPostScreen extends StatelessWidget {
                       UserPostHeader(
                         profileImage: profileImage[index],
                         name: userPostData[index].name,
+                        action: const Icon(Icons.more_horiz_outlined),
                       ),
                       /////......User Posted Image.....//////
                       Container(
@@ -72,6 +74,10 @@ class RecentPostScreen extends StatelessWidget {
                           child: Image.network(
                             userPostData[index].postImage,
                             fit: BoxFit.cover,
+                            loadingBuilder: (context, child, loadingProgress) {
+                              if (loadingProgress == null) return child;
+                              return const Loader();
+                            },
                           ),
                         ),
                       ),

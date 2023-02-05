@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_post/utils/app_colors.dart';
 
 ////////........Take Two Parameters Name and Profile Image....///////
 
@@ -7,9 +8,11 @@ class UserPostHeader extends StatelessWidget {
     Key? key,
     required this.name,
     required this.profileImage,
+    required this.action,
   }) : super(key: key);
   final String name;
   final String profileImage;
+  final Widget action;
 
   @override
   Widget build(BuildContext context) {
@@ -23,16 +26,20 @@ class UserPostHeader extends StatelessWidget {
               decoration: const BoxDecoration(shape: BoxShape.circle),
               height: 45,
               width: 45,
-              child: Image.network(profileImage),
+              child: Image.network(
+                profileImage,
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           const SizedBox(width: 10),
           Text(
             name,
-            style: const TextStyle(fontWeight: FontWeight.w600),
+            style: const TextStyle(
+                fontWeight: FontWeight.w600, color: AppColors.snowWhite),
           ),
           const Spacer(),
-          const Icon(Icons.more_horiz_outlined),
+          action
         ],
       ),
     );
