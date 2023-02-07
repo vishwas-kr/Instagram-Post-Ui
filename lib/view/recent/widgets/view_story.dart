@@ -32,6 +32,7 @@ class ViewStory extends StatelessWidget {
               child: UserPostHeader(
                 name: name,
                 profileImage: image,
+                textColor: AppColors.snowWhite,
                 action: InkWell(
                   onTap: () {
                     Navigator.pop(context);

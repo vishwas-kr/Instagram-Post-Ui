@@ -9,10 +9,12 @@ class UserPostHeader extends StatelessWidget {
     required this.name,
     required this.profileImage,
     required this.action,
+    this.textColor,
   }) : super(key: key);
   final String name;
   final String profileImage;
   final Widget action;
+  final Color? textColor;
 
   @override
   Widget build(BuildContext context) {
@@ -35,8 +37,7 @@ class UserPostHeader extends StatelessWidget {
           const SizedBox(width: 10),
           Text(
             name,
-            style: const TextStyle(
-                fontWeight: FontWeight.w600, color: AppColors.snowWhite),
+            style: TextStyle(fontWeight: FontWeight.w600, color: textColor),
           ),
           const Spacer(),
           action

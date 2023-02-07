@@ -14,12 +14,12 @@ class RecentPostScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xffEEF0F7),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: const Color(0xffEEF0F7),
         elevation: 1,
         iconTheme: const IconThemeData(color: Colors.black),
-        leading: const Icon(Icons.camera_alt_outlined),
-        centerTitle: true,
+        //centerTitle: true,
         title: const Text(
           "Instagram",
           style: TextStyle(
@@ -32,7 +32,7 @@ class RecentPostScreen extends StatelessWidget {
         ),
         actions: [
           Image.asset(
-            'assets/icons/tv.png',
+            'assets/icons/add.png',
             width: 24,
           ),
           const SizedBox(width: 10),
@@ -54,7 +54,11 @@ class RecentPostScreen extends StatelessWidget {
               itemCount: userPostData.length,
               itemBuilder: ((context, index) {
                 return Container(
-                  color: AppColors.grey,
+                  margin:
+                      const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+                  decoration: BoxDecoration(
+                      color: AppColors.white,
+                      borderRadius: BorderRadius.circular(15)),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
