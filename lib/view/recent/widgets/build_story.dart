@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_post/utils/data.dart';
 import 'package:instagram_post/utils/image_url.dart';
 import 'package:instagram_post/view/recent/widgets/add_story_button.dart';
 import 'package:instagram_post/view/recent/widgets/view_story.dart';
@@ -22,7 +23,7 @@ class BuildStory extends StatelessWidget {
             ListView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
-              itemCount: story.length,
+              itemCount: storyData.length,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) => GestureDetector(
                 onTap: () {
@@ -30,8 +31,8 @@ class BuildStory extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ViewStory(
-                                image: story[index],
-                                name: "Elodie",
+                                image: storyData[index].image,
+                                name: storyData[index].name,
                               )));
                 },
                 child: Container(
@@ -46,12 +47,12 @@ class BuildStory extends StatelessWidget {
                           radius: 30,
                           backgroundColor: const Color(0xff826F6F),
                           backgroundImage: NetworkImage(
-                            story[index],
+                            storyData[index].image,
                           ),
                         ),
                       ),
-                      const Text(
-                        'Elodie',
+                      Text(
+                        storyData[index].name,
                         textAlign: TextAlign.center,
                         overflow: TextOverflow.ellipsis,
                       ),

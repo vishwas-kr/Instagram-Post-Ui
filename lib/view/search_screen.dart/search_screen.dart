@@ -18,26 +18,31 @@ class SearchScreen extends StatelessWidget {
           SliverAppBar(
             floating: true,
             snap: true,
+            toolbarHeight: 65,
             backgroundColor: Colors.black87,
-            title: TextField(
-              cursorColor: AppColors.white,
-              decoration: InputDecoration(
-                filled: true,
-                isDense: true,
-                hintText: "Search",
-                hintStyle: const TextStyle(fontSize: 14, color: Colors.grey),
-                fillColor: Colors.black38,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30),
-                  borderSide: const BorderSide(color: Colors.black),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30),
-                  borderSide: const BorderSide(color: Colors.black12),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30),
-                  borderSide: const BorderSide(color: Colors.grey),
+            title: Container(
+              margin: const EdgeInsets.only(bottom: 8.0),
+              child: TextField(
+                cursorColor: AppColors.white,
+                style: const TextStyle(color: AppColors.snowWhite),
+                decoration: InputDecoration(
+                  filled: true,
+                  isDense: true,
+                  hintText: "Search",
+                  hintStyle: const TextStyle(fontSize: 14, color: Colors.grey),
+                  fillColor: Colors.black38,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: const BorderSide(color: Colors.black),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: const BorderSide(color: Colors.black12),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: const BorderSide(color: Colors.grey),
+                  ),
                 ),
               ),
             ),

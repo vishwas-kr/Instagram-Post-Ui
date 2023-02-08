@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_post/utils/app_colors.dart';
-import 'package:instagram_post/view/activity/activity_screen.dart';
 import 'package:instagram_post/view/auth/auth_screen.dart';
+import 'package:instagram_post/view/notification/activity_screen.dart';
 import 'package:instagram_post/view/profile/profile_screen.dart';
 import 'package:instagram_post/view/recent/recent_post_screen.dart';
 import 'package:instagram_post/view/search_screen.dart/search_screen.dart';
@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
     RecentPostScreen(),
     SearchScreen(),
     AuthScreen(),
-    ActivityScreen(),
+    NotificationScreen(),
     ProfielScreen(),
   ];
 
