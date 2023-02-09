@@ -1,8 +1,14 @@
-# instagram_post
+# Instagram Redesign UI
 
-A Simple Instagram Post Section UI made using Flutter.
+A Mordern Instagram App UI made using Flutter.
 
 ## Getting Started
+
+---
+
+1. Clone the Repository `git clone https://github.com/vishwas-kr/Instagram-Redesign.git`.
+2. Run `flutter pub get` to install all dependencies.
+3. Run `flutter run` in terminal to run the app on an emulator or physical device.
 
 This project is a starting point for a Flutter application.
 
