@@ -7,7 +7,8 @@ A Simple Instagram Post Section UI made using Flutter.
 This project is a starting point for a Flutter application.
 
 ### App Screenshots
-<img src="assets/ss/s2.png" width="250"> <img src="assets/ss/s1.png" width="250">
+
+<img src="assets/ss/feed.png" width="250" alt="Feed"> <img src="assets/ss/story.png" alt="Story" width="250"> <img src="assets/ss/profile.png" alt="Profile" width="250">
 
 A few resources to get you started if this is your first Flutter project:
 
