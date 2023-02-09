@@ -1,6 +1,6 @@
 import 'package:instagram_post/utils/image_url.dart';
 
-import '../model/story.dart';
+import '../model/story_model.dart';
 import '../model/uder_model.dart';
 
 //////......... Raw Data For Displaying User Posts .....////////
@@ -41,13 +41,13 @@ List<UserPost> userPostData = [
   ),
 ];
 
-List<Story> storyData = [
-  Story(name: "James", image: story[0]),
-  Story(name: "Lee Barn", image: story[1]),
-  Story(name: "Kylie", image: story[2]),
-  Story(name: "Ellie", image: story[3]),
-  Story(name: "Ruth jil", image: story[4]),
-  Story(name: "Jessica", image: story[5]),
-  Story(name: "Namora", image: story[6]),
-  Story(name: "John", image: story[7]),
+List<StoryModel> storyData = [
+  StoryModel(name: "Lee Barn", image: story[1]),
+  StoryModel(name: "Kylie", image: story[2]),
+  StoryModel(name: "Ellie", image: story[3]),
+  StoryModel(name: "Ruth jil", image: story[4]),
+  StoryModel(name: "Jessica", image: story[5]),
+  StoryModel(name: "Namora", image: story[6]),
+  StoryModel(name: "John", image: story[7]),
+  StoryModel(name: "James", image: story[0]),
 ];

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_post/utils/data.dart';
-import 'package:instagram_post/utils/image_url.dart';
 import 'package:instagram_post/view/recent/widgets/add_story_button.dart';
 import 'package:instagram_post/view/recent/widgets/view_story.dart';
 
