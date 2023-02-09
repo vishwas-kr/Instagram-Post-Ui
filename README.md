@@ -12,7 +12,9 @@ A Mordern Instagram App UI made using Flutter.
 
 This project is a starting point for a Flutter application.
 
-### App Screenshots
+## App Screenshots
+
+---
 
 <img src="assets/ss/feed.png" width="250" alt="Feed"> <img src="assets/ss/story.png" alt="Story" width="250"> <img src="assets/ss/profile.png" alt="Profile" width="250">
 
